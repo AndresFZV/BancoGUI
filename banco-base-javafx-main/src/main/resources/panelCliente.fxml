@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="868.0" style="-fx-background-color: #f5f2ed;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.PanelClienteControlador">
+   <children>
+      <Pane layoutX="-12.0" prefHeight="63.0" prefWidth="882.0" style="-fx-background-color: #00807a;">
+         <children>
+            <Label alignment="CENTER" layoutX="280.0" layoutY="16.0" style="-fx-text-fill: white;" text="Panel principal de administración">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="52.0" layoutX="219.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tablaTransacciones" layoutX="4.0" layoutY="148.0" prefHeight="245.0" prefWidth="860.0">
+         <columns>
+            <TableColumn fx:id="tipoTr" prefWidth="180.0" text="Tipo" />
+            <TableColumn fx:id="fechaTr" prefWidth="180.0" text="Fecha" />
+            <TableColumn fx:id="valorTr" prefWidth="180.0" text="Valor" />
+            <TableColumn fx:id="usuarioTr" prefWidth="180.0" text="Usuario" />
+            <TableColumn fx:id="categoriaTr" prefWidth="180.0" text="Categoría" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="63.0" fitWidth="52.0" layoutX="22.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/usuario.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblNombre" layoutX="82.0" layoutY="74.0" prefHeight="11.0" prefWidth="94.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="104.0" text="Bienvenido a su banco, aquí podra ver sus transacciones" />
+      <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="611.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/hastag.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblCuenta" layoutX="650.0" layoutY="92.0" prefHeight="27.0" prefWidth="177.0" text="Cuenta: 1112323">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="48.0" layoutY="407.0" spacing="20.0">
+         <children>
+            <Button minHeight="40.0" minWidth="130.0" onAction="#cerrarSesion" style="-fx-background-color: #00807a; -fx-text-fill: white" text="Cerrar sesión" />
+            <Button minHeight="40.0" minWidth="130.0" onAction="#irTransferencia" style="-fx-background-color: #00807a; -fx-text-fill: white" text="Transferir" />
+            <Button minHeight="40.0" minWidth="130.0" onAction="#irActualizar" style="-fx-background-color: #00807a; -fx-text-fill: white" text="Actualizar datos" />
+            <Button minHeight="40.0" minWidth="130.0" onAction="#consultar" style="-fx-background-color: #00807a; -fx-text-fill: white" text="Consultar" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

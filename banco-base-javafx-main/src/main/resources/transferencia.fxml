@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.TransferenciaControlador">
+   <children>
+      <!-- Encabezado -->
+      <Pane prefHeight="65.0" prefWidth="479.0" style="-fx-background-color: #00807a;">
+         <children>
+            <Label alignment="CENTER" layoutX="136.0" layoutY="17.0" style="-fx-text-fill: white;" text="Realizar transferencia">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <!-- Contenido -->
+      <VBox alignment="CENTER_LEFT" layoutY="65.0" prefHeight="242.0" prefWidth="221.0" spacing="40.0">
+         <children>
+            <Label text="Número de cuenta:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="0.0" text="Monto a transferir:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets right="20.0" />
+               </opaqueInsets>
+            </Label>
+            <Label text="Categoría:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="50.0" />
+         </padding>
+      </VBox>
+      <!-- Campos de entrada -->
+      <TextField fx:id="nCuentaTextField" layoutX="221.0" layoutY="115.0" prefHeight="32.0" prefWidth="221.0" />
+      <TextField fx:id="montoTextField" layoutX="221.0" layoutY="186.0" prefHeight="32.0" prefWidth="221.0" />
+      <ComboBox fx:id="categoriaCB" layoutX="221.0" layoutY="257.0" prefHeight="32.0" prefWidth="221.0" />
+      <!-- Botón de transferencia -->
+      <Button layoutX="185.0" layoutY="362.0" mnemonicParsing="false" onAction="#transferir" prefHeight="50.0" prefWidth="109.0" style="-fx-background-color: #00807a; -fx-text-fill: white;" text="Transferir" />
+   </children>
+</Pane>

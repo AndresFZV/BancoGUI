@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.DatosControlador">
+    <children>
+        <GridPane alignment="CENTER" hgap="10.0" layoutX="53.0" layoutY="91.0" vgap="10.0">
+            <children>
+                <Label text="Nombre:" />
+                <TextField fx:id="txtNombre" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label text="Dirección" GridPane.rowIndex="1" />
+                <TextField fx:id="txtDireccion" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Número Identificación:" GridPane.rowIndex="2" />
+                <TextField fx:id="txtIdentificacion" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="Correo:" GridPane.rowIndex="3" />
+                <TextField fx:id="txtCorreo" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label text="Contraseña:" GridPane.rowIndex="4" />
+                <PasswordField fx:id="txtPassword" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="idEstatico" alignment="CENTER" prefHeight="18.0" prefWidth="58.0" textAlignment="CENTER" textFill="#b1abab" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+        <Pane prefHeight="66.0" prefWidth="410.0" style="-fx-background-color: #00807a;">
+            <children>
+                <Label layoutX="147.0" layoutY="18.0" text="Editar perfil" textFill="WHITE">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutY="353.0" prefHeight="48.0" prefWidth="410.0" style="-fx-background-color: #00807a;" />
+        <HBox alignment="CENTER" layoutX="65.0" layoutY="304.0" spacing="20.0" />
+          <Button layoutX="134.0" layoutY="302.0" minHeight="40.0" minWidth="130.0" onAction="#actualizar" style="-fx-background-color: #00807a; -fx-text-fill: white" text="Actualizar" />
+    </children>
+</Pane>
